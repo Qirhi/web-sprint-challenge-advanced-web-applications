@@ -86,4 +86,3 @@ export default Login;
 //Task List:
 
 //4. If either the username or password is not displaied display EXACTLY the following words: Username or Password not valid.
-//5. If the username / password is equal to Lambda School / i<3Lambd4, save that token to localStorage.
