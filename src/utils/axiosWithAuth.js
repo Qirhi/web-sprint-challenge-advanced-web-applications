@@ -1,4 +1,5 @@
 import axios from "axios";
+// jest.mock('axios')
 
 export const axiosWithAuth = () => {
   const token = localStorage.getItem("authToken");

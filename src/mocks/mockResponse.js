@@ -1,5 +1,5 @@
-export const mockResponse = [
-  data: {
+export const mockResponse = {
+  data: [
     {
       color: "aliceblue",
       code: {
@@ -76,6 +76,6 @@ export const mockResponse = [
         hex: "#8a2be2",
       },
       id: 11,
-    },
-  },
-];
+    }
+  ],
+};
