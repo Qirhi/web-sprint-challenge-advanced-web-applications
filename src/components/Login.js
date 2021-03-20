@@ -7,10 +7,16 @@ const initialCredentialValue = {
   password: ""
 }
 
+const initialFormErrors = {
+  isError: false,
+  message: 'Username or Password not valid.',
+}
+
 const Login = () => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
   const [credentials, setCredentials] = useState(initialCredentialValue);
+  const [formErrors, setFormErrors] = useState(initialFormErrors); // errors
 
   const history = useHistory();
 
@@ -29,7 +35,13 @@ const Login = () => {
       // redirect to logged in homepage
       history.push("/protected");
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      setFormErrors({
+        ...initialFormErrors,
+        isError: true
+      })
+      console.log(err)
+    });
   }
 
   const handleSubmit = (e) => {
@@ -73,6 +85,7 @@ const Login = () => {
           >
             Login
           </button>
+          <div>{formErrors.isError? formErrors.message : ""}</div>
         </form>
 
       </div>
