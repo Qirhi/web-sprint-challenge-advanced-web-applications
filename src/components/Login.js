@@ -33,7 +33,7 @@ const Login = () => {
       console.log(res);
       localStorage.setItem("authToken", res.data.payload);
       // redirect to logged in homepage
-      history.push("/protected");
+      history.push("/bubbles");
     })
     .catch(err => {
       setFormErrors({

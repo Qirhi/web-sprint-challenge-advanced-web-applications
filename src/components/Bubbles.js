@@ -32,6 +32,7 @@ const Bubbles = ({ colors }) => {
                 if (i < colors.length) {
                   return (
                     <Circle
+                      role="img"
                       key={key}
                       cx={x}
                       cy={y}

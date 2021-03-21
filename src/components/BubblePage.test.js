@@ -17,6 +17,7 @@ test("Fetches data and renders the bubbles on mounting", async () => {
   // await wait();
 
   expect(screen.getAllByTestId("circle")).toHaveLength(1);
+
   
 });
 
