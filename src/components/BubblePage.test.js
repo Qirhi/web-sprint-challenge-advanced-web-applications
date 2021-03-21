@@ -17,10 +17,5 @@ test("Fetches data and renders the bubbles on mounting", async () => {
   // await wait();
 
   expect(screen.getAllByTestId("circle")).toHaveLength(1);
-
   
 });
-
-
-//2. Setup test for initial rendering of bubbles on loading
-

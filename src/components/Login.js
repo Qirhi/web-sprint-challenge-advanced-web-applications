@@ -13,8 +13,6 @@ const initialFormErrors = {
 }
 
 const Login = () => {
-  // make a post request to retrieve a token from the api
-  // when you have handled the token, navigate to the BubblePage route
   const [credentials, setCredentials] = useState(initialCredentialValue);
   const [formErrors, setFormErrors] = useState(initialFormErrors); // errors
 
@@ -95,7 +93,3 @@ const Login = () => {
 };
 
 export default Login;
-
-//Task List:
-
-//4. If either the username or password is not displaied display EXACTLY the following words: Username or Password not valid.
